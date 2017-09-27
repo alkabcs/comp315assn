@@ -10,6 +10,7 @@ function login() {
   };
   xhttp.open("GET", "php/login.php?username=" + username + "&password=" + password, true);
   xhttp.send();
+
 }
 
 function logout() {

@@ -87,7 +87,7 @@ button:hover {
 }
 
 #welcome_div {
-  position:relative;
+  position: relative;
   float: right;
 }
 
@@ -98,6 +98,12 @@ button:hover {
 	width: 100%;
 	margin: auto auto;
 	box-sizing: border-box;
+}
+
+#admin_page {
+  width: 100%;
+  padding: 0.5em;
+  float: left;
 }
 
 @media screen and (max-width:450px) {

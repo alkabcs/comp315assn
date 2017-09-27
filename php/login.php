@@ -1,8 +1,8 @@
 <?php
 
   include 'functions.php';
-  $con = mysqli_connect('localhost', 'root', 'root', 'wellness_clinic');
 
+  $con = mysqli_connect('localhost', 'root', 'root', 'wellness_clinic');
   if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
@@ -18,7 +18,6 @@
   while($row = mysqli_fetch_assoc($result)) {
     $username_found = $row['admin_email'];
     $password_found = $row['admin_passwd'];
-    echo $username_found;
   }
 
   if($password_found == $password) {
