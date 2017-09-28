@@ -134,7 +134,7 @@ button:hover {
 /*---------------------CSS GRID----------------------*/
 
 .sidebar {
-  gird-area: sidebar;
+  grid-area: sidebar;
 }
 
 .content {
@@ -152,11 +152,30 @@ button:hover {
     "sidebar content content";
 }
 
+.name {
+  grid-area: name;
+}
+
+.info {
+  grid-area: info;
+}
+
+.notes {
+  grid-area: notes;
+}
+
+.client_load {
+  display: grid;
+  grid-template-areas:
+  "name name name"
+  "info info info"
+  "notes notes notes";
+}
+
 .box {
   background-color: #444;
   color: #fff;
   padding: 20px;
-  font-size: 150%;
 }
 
 .header {
@@ -168,5 +187,5 @@ button:hover {
 }
 
 .content {
-  
+
 }

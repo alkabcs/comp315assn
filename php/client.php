@@ -11,22 +11,20 @@
 
   echo "<table id=\"client_list\">
   <tr>
+  <th>ID</th>
   <th>First Name</th>
   <th>Last Name</th>
   <th>Email</th>
   </tr>";
 
   while($row = mysqli_fetch_assoc($result)) {
-    $fname    = $row['client_fname'];
-    $lname    = $row['client_lname'];
-    $email    = $row['client_email'];
-    $address  = $row['client_address'];
-    $dob      = $row['client_dob'];
-    $gender   = $row['client_gender'];
-    $home     = $row['client_home'];
-    $mobile   = $row['client_mobile'];
+    $id       = $row['client_id'];
+    $fname    = ucfirst($row['client_fname']);
+    $lname    = ucfirst($row['client_lname']);
+    $email    = strtolower($row['client_email']);
 
     echo "<tr>";
+    echo "<td id = " . $fname . ">" . $id . "</td>";
     echo "<td><a href='javascript:client_load()'>" . $fname . "<a/></td>";
     echo "<td>" . $lname . "</td>";
     echo "<td>" . $email . "</td>";
