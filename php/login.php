@@ -1,7 +1,5 @@
 <?php
 
-  include 'functions.php';
-
   $con = mysqli_connect('localhost', 'root', 'root', 'wellness_clinic');
   if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
@@ -10,6 +8,7 @@
 
   $username = $_GET["username"];
   $password = $_GET["password"];
+  $_COOKIE['username'] = $username;
 
   $query = "SELECT * FROM admin";
 
@@ -21,7 +20,7 @@
   }
 
   if($password_found == $password) {
-  loadHome($username);
+    include("../admin_home.php");
   } else {
     print('Error');
   }
