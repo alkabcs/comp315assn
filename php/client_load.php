@@ -23,7 +23,6 @@
     $gender   = ucfirst($row['client_gender']);
     $home     = $row['client_home'];
     $mobile   = $row['client_mobile'];
-    $notes    = $row['appt_notes'];
   }
 
   echo "<div class=\"box name\">";
@@ -34,7 +33,6 @@
   echo "<p>Home Phone: " . $home . " Mobile: " . $mobile . "</p>";
   echo "</div>";
   echo "<div class=\"box notes\">";
-  echo "<textarea>" . $notes . "</textarea>"
   echo "</div>";
 
   mysqli_close($con);
