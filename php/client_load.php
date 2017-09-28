@@ -5,9 +5,10 @@
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-    $fetch_id = $_GET["id"];
+  $fetch_id = $_GET["id"];
+  $fetch_name = $_GET["name"];
 
-  $query = "SELECT client.*, appointment.appt_notes FROM client INNER JOIN appointment ON client.client_id = appointment.appt_id WHERE client.client_id=" . $fetch_id . "";
+  $query = "SELECT client.*, appointment.appt_notes FROM client INNER JOIN appointment ON client.client_id = appointment.client_id WHERE client.client_id=" . $fetch_id . "";
 
   $result = mysqli_query($con, $query);
 

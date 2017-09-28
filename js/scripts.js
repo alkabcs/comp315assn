@@ -50,8 +50,6 @@ function client_search() {
   }
 }
 
-
-
 function client_load() {
   document.getElementById('admin_load').onclick = function(event) {
     var target = event.target || event.srcElement;
