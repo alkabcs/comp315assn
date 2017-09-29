@@ -51,7 +51,7 @@ function client_search() {
 }
 
 function client_load() {
-  document.getElementById('admin_load').onclick = function(event) {
+  document.getElementById('client_list').onclick = function(event) {
     var target = event.target || event.srcElement;
     var name = target.innerHTML;
     var list = document.getElementById('admin_load');
@@ -67,3 +67,83 @@ function client_load() {
     xhttp.send();
   }
 }
+
+function client_update(cid) {
+    var fname = document.getElementById('fname').value;
+    var lname = document.getElementById('lname').value;
+    var email = document.getElementById('email').value;
+    var address = document.getElementById('address').value;
+    var dob = document.getElementById('dob').value;
+    var gender = document.getElementById('gender').value;
+    var home = document.getElementById('home').value;
+    var mobile = document.getElementById('mobile').value;
+    var notes = document.getElementById('notes').value;
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById('admin_load').innerHTML = this.responseText;
+      }
+    };
+    xhttp.open("GET", "php/client_update.php?cid=" + cid + "&fname=" + fname + "&lname=" + lname + "&email=" + email + "&address=" + address + "&dob=" + dob + "&gender=" + gender + "&home=" + home + "&mobile=" + mobile + "&notes=" + notes, true);
+    xhttp.send();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

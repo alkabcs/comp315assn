@@ -26,7 +26,6 @@
         <div class=" box content">
           <p>Content</p>
           <div class="box list">
-            <input type="text" id="myInput" onkeyup="client_search()" placeholder="Client search...">
             <div id="admin_load">
             </div>
           </div>
