@@ -20,6 +20,7 @@
         <div class="box sidebar">
           <div class="btn_group">
             <button onclick="client()">Client</button>
+			<button onclick="gotoreports()">View Reports</button>
             <button onclick="logout()">Logout</button>
           </div>
         </div>

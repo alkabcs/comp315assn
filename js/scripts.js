@@ -67,3 +67,7 @@ function client_load() {
     xhttp.send();
   }
 }
+
+function gotoreports() {
+   // TODO:
+}
