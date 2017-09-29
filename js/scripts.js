@@ -89,7 +89,36 @@ function client_update(cid) {
     xhttp.send();
 }
 
+function client_new() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById('admin_load').innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "php/client_new.php?", true);
+  xhttp.send();
+}
 
+function client_add() {
+  var fname = document.getElementById('fname').value;
+  var lname = document.getElementById('lname').value;
+  var email = document.getElementById('email').value;
+  var address = document.getElementById('address').value;
+  var dob = document.getElementById('dob').value;
+  var gender = document.getElementById('gender').value;
+  var home = document.getElementById('home').value;
+  var mobile = document.getElementById('mobile').value;
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById('admin_load').innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "php/client_add.php?&fname=" + fname + "&lname=" + lname + "&email=" + email + "&address=" + address + "&dob=" + dob + "&gender=" + gender + "&home=" + home + "&mobile=" + mobile, true);
+  xhttp.send();
+}
 
 
 
