@@ -25,6 +25,8 @@ function client() {
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
           list.innerHTML = this.responseText;
+          var search = document.getElementById('myInput');
+          search.style.visibility = 'visible';
       }
     };
     xhttp.open("GET", "php/client.php", true);
@@ -69,5 +71,19 @@ function client_load() {
 }
 
 function gotoreports() {
-   // TODO:
+
+    var list = document.getElementById('admin_load');
+    list.innerHTML = "";
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            list.innerHTML = this.responseText;
+            var search = document.getElementById('myInput');
+            search.style.visibility = 'hidden';     
+        }
+    };
+
+    xhttp.open("GET", "php/report.php", true);
+    xhttp.send();
 }
