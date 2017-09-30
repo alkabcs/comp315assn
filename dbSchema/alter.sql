@@ -1,0 +1,1 @@
+ALTER TABLE `appointment` CHANGE `appt_paid` `appt_paid` BOOLEAN NULL DEFAULT FALSE;
