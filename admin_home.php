@@ -26,7 +26,9 @@
           </div>
         </div>
         <div class=" box content">
-          <p id="pcontent">Content</p>
+			<div id="pcontent">				
+			</div>
+          
           <div id="boxdata" class="box list">
 		  <div id="txtsearch"></div>            
             <div id="admin_load">

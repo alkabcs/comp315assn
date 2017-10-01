@@ -18,17 +18,14 @@ function logout() {
 }
 
 function client() {
-    var list = document.getElementById('admin_load');
-    list.innerHTML = "";
-
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var data = this.responseText;
-            list.innerHTML = data;
-            var searchbox = document.getElementById('txtsearch');
-            searchbox.innerHTML = '<input type= "text" id= "myInput" class="txtBox" onkeyup= "client_search()" placeholder = "Client search..." >';
-
+            $("#admin_load").html(data);
+            $("#txtsearch").html('<input type= "text" id= "myInput" class="txtBox" ' +
+                'onkeyup = "client_search()" placeholder = "Client search..." > ');
+            $("#pcontent").html("<p>Content</p>");
       }
     };
     xhttp.open("GET", "php/client.php", true);
@@ -75,13 +72,12 @@ function client_load() {
 
 function gotoreports() {
 
-    var searchbox = document.getElementById('txtsearch');
-    searchbox.innerHTML = 'From Date: <input type="text" id="fromdatepicker">To Date: ' +
-        '<input type="text" id="todatepicker" onchange="getreport()">';
+    $("#txtsearch").html('From Date: <input type="text" id="fromdatepicker">To Date: ' +
+        '<input type="text" id="todatepicker" onchange="getreport()">');
     $("#fromdatepicker").datepicker();
     $("#todatepicker").datepicker();
-    var list = document.getElementById('admin_load');
-    list.innerHTML = "";
+
+    $("#admin_load").html('');
  
 }
 
@@ -89,10 +85,16 @@ function getreport() {
    
     var fromdate = $("#fromdatepicker").val();
     var todate = $("#todatepicker").val();
+
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("admin_load").innerHTML = this.responseText;
+            var data = this.responseText;
+            var dataarray = data.split('&');
+    
+            $("#admin_load").html(dataarray[0]);
+            $("#pcontent").html("<p>Sales Report for period " +
+                fromdate + " and " + todate + " </p><p>Total Paid: " + dataarray[1] + "</p>");
         }
     };
     var uri = 'php/report.php?fromdate=' + fromdate + '&todate=' + todate;
