@@ -24,8 +24,8 @@ if(isset($fromdate) && isset($todate)){
 
    $query = "SELECT t.treat_type as `Service`, t.treat_fee as `Rate`, COUNT(t.treat_fee) as `Quantity`, ROUND(SUM((t.treat_fee * .15)), 2) as `Taxes`, " . "
 			ROUND(SUM((t.treat_fee * 1.15)), 2) as `Total` from treatment t join appointment a on a.treat_id = t.treat_id WHERE " . 
-			"a.appt_paid = 1 and a.appt_date between STR_TO_DATE('" . $fromdate . "', '%d/%m/%Y') and STR_TO_DATE('" . $todate 
-			. "', '%d/%m/%Y') group by t.treat_type, t.treat_fee";
+			"a.appt_paid = 1 and a.appt_date between STR_TO_DATE('" . $fromdate . "', '%d-%m-%Y') and STR_TO_DATE('" . $todate 
+			. "', '%d-%m-%Y') group by t.treat_type, t.treat_fee";
 	$conn = opendb();
 
 	 $result = mysqli_query($conn, $query) or die ('error query failed accessing data');

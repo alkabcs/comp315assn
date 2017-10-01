@@ -74,8 +74,8 @@ function gotoreports() {
 
     $("#txtsearch").html('From Date: <input type="text" id="fromdatepicker">To Date: ' +
         '<input type="text" id="todatepicker" onchange="getreport()">');
-    $("#fromdatepicker").datepicker();
-    $("#todatepicker").datepicker();
+    $("#fromdatepicker").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#todatepicker").datepicker({ dateFormat: 'dd-mm-yy' });
 
     $("#admin_load").html('');
  
