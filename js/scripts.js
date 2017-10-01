@@ -23,10 +23,12 @@ function client() {
 
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-          list.innerHTML = this.responseText;
-          var search = document.getElementById('myInput');
-          search.style.visibility = 'visible';
+        if (this.readyState == 4 && this.status == 200) {
+            var data = this.responseText;
+            list.innerHTML = data;
+            var searchbox = document.getElementById('txtsearch');
+            searchbox.innerHTML = '<input type= "text" id= "myInput" class="txtBox" onkeyup= "client_search()" placeholder = "Client search..." >';
+
       }
     };
     xhttp.open("GET", "php/client.php", true);
@@ -70,20 +72,32 @@ function client_load() {
   }
 }
 
+
 function gotoreports() {
 
+    var searchbox = document.getElementById('txtsearch');
+    searchbox.innerHTML = 'From Date: <input type="text" id="fromdatepicker">To Date: ' +
+        '<input type="text" id="todatepicker" onchange="getreport()">';
+    $("#fromdatepicker").datepicker();
+    $("#todatepicker").datepicker();
     var list = document.getElementById('admin_load');
     list.innerHTML = "";
+ 
+}
 
+function getreport() {
+   
+    var fromdate = $("#fromdatepicker").val();
+    var todate = $("#todatepicker").val();
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            list.innerHTML = this.responseText;
-            var search = document.getElementById('myInput');
-            search.style.visibility = 'hidden';     
+            document.getElementById("admin_load").innerHTML = this.responseText;
         }
     };
-
-    xhttp.open("GET", "php/report.php", true);
+    var uri = 'php/report.php?fromdate=' + fromdate + '&todate=' + todate;
+    xhttp.open("GET", uri, true);
     xhttp.send();
+
 }
+

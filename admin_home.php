@@ -12,6 +12,7 @@
       <div class="wrapper">
         <div class="box header">
           <?php
+
             $username = $_COOKIE['username'];
             print ("<p>Welcome " . $username . "</br>" . date("D M d, Y G:i a") . "</p>");
           ?>
@@ -25,9 +26,9 @@
           </div>
         </div>
         <div class=" box content">
-          <p>Content</p>
-          <div class="box list">
-            <input type="text" id="myInput" onkeyup="client_search()" placeholder="Client search...">
+          <p id="pcontent">Content</p>
+          <div id="boxdata" class="box list">
+		  <div id="txtsearch"></div>            
             <div id="admin_load">
             </div>
           </div>
