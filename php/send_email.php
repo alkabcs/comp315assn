@@ -1,5 +1,5 @@
 <?php  
-require_once('../PHPMailer/PHPMailer.php');
+require_once('../lib/PHPMailer.php');
 
 
 function opendb()
