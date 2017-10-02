@@ -8,6 +8,7 @@ if(isset($fromdate) && isset($todate)){
 }
  function opendb()
  {
+
      $servername  = 'localhost';
      $username = 'root';
      $password = 'root';
