@@ -17,6 +17,28 @@ function logout() {
   location.reload(true);
 }
 
+// Standard ajaxRequest
+function ajaxRequest(method, url, data, callback) {
+  var request = new XMLHttpRequest();
+  request.open(method, url);
+
+  if (method == 'POST') {
+    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  }
+
+  request.onreadystatechange = function() {
+    if (request.readyState == 4 && request.status == 200) {
+      var response = request.responseText;
+      callback(response);
+    } else {
+      alert("ReadyState = " + request.readyState +
+              ". Status = " + request.status);
+    }
+  }
+
+  request.send(data);
+}
+
 function client() {
     var list = document.getElementById('admin_load');
     list.innerHTML = "";
@@ -118,6 +140,93 @@ function client_add() {
   };
   xhttp.open("GET", "php/client_add.php?&fname=" + fname + "&lname=" + lname + "&email=" + email + "&address=" + address + "&dob=" + dob + "&gender=" + gender + "&home=" + home + "&mobile=" + mobile, true);
   xhttp.send();
+}
+
+function discount() {
+  var content = document.getElementById('admin_load');
+  content.innerHTML = "";
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      content.innerHTML = this.responseText;
+    }
+  };
+
+  xhttp.open("GET", "php/discounts.php", true);
+  xhttp.send();
+}
+
+function discount_load() {
+  document.getElementById('admin_load').onclick = function(event) {
+    var target = event.target || event.srcElement;
+    var name = target.innerHTML;
+    var list = document.getElementById('admin_load');
+    var id = document.getElementById(name).firstElementChild.innerHTML;
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readState == 4 && this.status == 200) {
+        list.innerHTML = this.responseText;
+      }
+    };
+
+    xhttp.open("GET", "php/discount_load.php?disc_id=" + id, true);
+    xhttp.send();
+  }
+}
+
+function treatment() {
+  var content = document.getElementById('admin_load');
+  content.innerHTML = "";
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      content.innerHTML = this.responseText;
+    }
+  };
+
+  xhttp.open("GET", "php/treatment.php", true);
+  xhttp.send();
+}
+
+function treatment_load() {
+  document.getElementById('admin_load').onclick = function(event) {
+    var target = event.target || event.srcElement;
+    var name = target.innerHTML;
+    var list = document.getElementById('admin_load');
+    var id = document.getElementById(name).firstElementChild.innerHTML;
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        list.innerHTML = this.responseText;
+      }
+    };
+
+    xhttp.open("GET", "php/treatment_load.php?treat_id=" + id, true);
+    xhttp.send();
+  }
+}
+
+function schedule() {
+  var content = document.getElementById('admin_load');
+  content.innerHTML = "";
+
+  content.innerHTML = '<iframe src="https://calendar.google.com/calendar/embed?src=atm3klm20a5u2rdrk5dclr69kc%40group.calendar.google.com&ctz=Pacific/Auckland" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>';
+
+  /*
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      content.innerHTML = this.responseText;
+    }
+  };
+
+  xhttp.open("GET", "php/schedule.php", true);
+  xhttp.send();
+  */
 }
 
 

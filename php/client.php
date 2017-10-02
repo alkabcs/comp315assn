@@ -1,10 +1,7 @@
 <?php
 
-  $con = mysqli_connect('localhost', 'root', 'root', 'wellness_clinic');
-  if (mysqli_connect_errno()) {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
-
+  include_once('functions.php');
+  
   $query = "SELECT * FROM client";
 
   $result = mysqli_query($con, $query);

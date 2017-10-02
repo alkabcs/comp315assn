@@ -1,5 +1,7 @@
 <?php
 
+  include_once('functions.php');
+
   $id = $_GET['cid'];
   $fname = $_GET['fname'];
   $lname = $_GET['lname'];
@@ -10,11 +12,6 @@
   $home = $_GET['home'];
   $mobile = $_GET['mobile'];
   $notes = $_GET['notes'];
-
-  $con = mysqli_connect('localhost', 'root', 'root', 'wellness_clinic');
-  if (mysqli_connect_errno()) {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
 
   $query = "UPDATE client SET client_fname='" . $fname . "', client_lname='" . $lname . "', client_email='" . $email . "', client_address='" . $address . "', client_dob='" . $dob . "', client_gender='" . $gender . "', client_home='" . $home . "', client_mobile='" . $mobile . "' WHERE client_id='" . $id . "'";
 
