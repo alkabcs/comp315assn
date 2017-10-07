@@ -1,3 +1,4 @@
+
 function login() {
   var username = document.forms["login_form"]["username_input"].value;
   var password = document.forms["login_form"]["password_input"].value;
@@ -211,12 +212,20 @@ function treatment_load() {
 }
 
 function schedule() {
-  var content = document.getElementById('admin_load');
-  content.innerHTML = "";
+    $("#admin_load").html('');
 
+    $("#boxdata").html('<select id="cmbConfirmed" onchange="getSchedule()"><option value= "1">Confirmed</option><option value="0">Unconfirmed</option>' +
+        '</select >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +
+        'From Date: <input type="text" id="fromdatepicker">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To Date: ' +
+        '<input type="text" id="todatepicker" onchange="getSchedule()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +
+        ' <button id="btnConfirm" onclick="Confirm()">Confirm<br>Unconfirm</button>' +
+        '<div id="admin_load"></div>');
+    $("#fromdatepicker").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#todatepicker").datepicker({ dateFormat: 'dd-mm-yy' });
+      /*
   content.innerHTML = '<iframe src="https://calendar.google.com/calendar/embed?src=atm3klm20a5u2rdrk5dclr69kc%40group.calendar.google.com&ctz=Pacific/Auckland" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>';
 
-  /*
+
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -228,60 +237,62 @@ function schedule() {
   xhttp.send();
   */
 }
+function gotoreports() {
+    $("#admin_load").html('');
+
+    $("#boxdata").html('<select id="cmbPaid" onchange="getreport()"><option value= "1">Paid</option><option value="0">Unpaid</option>' +
+        '</select >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +
+        'From Date: <input type="text" id="fromdatepicker">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To Date: ' +
+        '<input type="text" id="todatepicker" onchange="getreport()">' +
+        '<div id="admin_load"></div>');
+    $("#fromdatepicker").datepicker({ dateFormat: 'dd-mm-yy' });
+    $("#todatepicker").datepicker({ dateFormat: 'dd-mm-yy' });
+}
+
+function getreport() {
+
+ 
+    var fromdate = $("#fromdatepicker").val();
+    var todate = $("#todatepicker").val();
+    var paid = $('#cmbPaid').val();
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var data = this.responseText;
+            var dataarray = data.split('&');
+            $("#admin_load").html(dataarray[0]);
+            $("#pcontent").html("<p>Sales Report for period " +
+                fromdate + " and " + todate + " </p><p>Total Paid: " + dataarray[1] + "</p>");
+        }
+    };
+    var uri = 'php/function.php?fromdate=' + fromdate + '&todate=' + todate + '&bool=' + paid +
+        '&report=report';
+    xhttp.open("GET", uri, true);
+    xhttp.send();
+
+}
+
+function getSchedule() {
 
 
+    var fromdate = $("#fromdatepicker").val();
+    var todate = $("#todatepicker").val();
+    var confirmed = $('#cmbConfirmed').val();
 
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var data = this.responseText;
+            var dataarray = data.split('&');
+            $("#admin_load").html(dataarray[0]);
+            $("#pcontent").html("<p>Scheulde for period " +
+                fromdate + " and " + todate + " </p><p>Total: " + dataarray[1] + "</p>");
+        }
+    };
+    var uri = 'php/function.php?fromdate=' + fromdate + '&todate=' + todate + '&bool=' + confirmed +
+        '&schedule=schedule';
+    xhttp.open("GET", uri, true);
+    xhttp.send();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
+}

@@ -24,13 +24,14 @@
             <button onclick="schedule()">Schedule</button>
             <button onclick="treatment()">Treatments</button>
             <button onclick="discount()">Discounts</button>
-            <button onclick="">Reports</button><br>
-            <button onclick="">Logout</button>
+            <button onclick="gotoreports()">View Reports</button>
+            <button onclick="logout()">Logout</button>
           </div>
         </div>
         <div class=" box content">
-          <p>Content</p>
-          <div class="box list">
+ 			<div id="pcontent">				
+			</div>
+          <div id="boxdata" class="box list">
             <div id="admin_load">
             </div>
           </div>

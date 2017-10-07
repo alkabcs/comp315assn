@@ -1,1 +1,176 @@
-<!-- Intentionally Blank -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jo's Wellness Clinic</title>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,300italic,600italic'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- NEED TO BE FIXED -->
+    <!-- UNCOMMENT OUT THESE LINKS BELOW TO SEE TESTIOMONIALS WORKING!! -->
+    <!-- BT & JQ CDN'S-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- This jquery script F things up but if i can get it to work it will make UX 100 times better -->
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://raw.githubusercontent.com/louisremi/jquery.backgroundXY.js/master/jquery.backgroundXY.js'></script>
+    <script type="text/javascript">
+            window.onload = function () {
+
+                 //if (window.jQuery)
+                // {
+
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var data = this.responseText;
+                       // alert(data);
+                        $("#tstmnls").html(data);
+                    }
+                };
+                xhttp.open("GET", "php/testimonial.php", true);
+                xhttp.send();
+                // }
+
+            }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="movetext">Jo's Wellness Clinic</span>
+            <img class="" src="images/logo.png">
+            <a href="#portion1" class="active">INFO</a>
+            <a href="#portion2">SERVICES</a>
+            <a href="#portion3">TESTIMONIALS</a>
+            <a href="#portion4">CONTACT</a>
+            <a href="">BOOK</a>
+        </nav>
+    </header>
+
+    <div class="portion">
+        <h2>Jo's Wellness Clinic</h2>
+    </div>
+
+    <div id="portion1" class="info">
+        <h3>INFO</h3>
+        <p>Wellbeing Clinic is a Tauranga business specialising in providing services to local consumers. This includes massage, reflexology foot massage, counselling and wellness sessions.</p>
+    </div>
+
+    <div class="portion two">
+        <h2>SERVICES</h2>
+    </div>
+
+    <div id="portion2" class="info">
+        <h3>SERVICES</h3>
+        <p>
+            TEST -HOW CAN WELLNESS COACHING HELP ME?
+            TWC Wellness Coaching will give you the tools and the support to create the changes you want in your life. The life areas most clients need help to facilitate change include –
+
+            ENERGY – PHYSICAL/MENTAL/EMOTIONAL
+            PHYSICAL FITNESS
+            EATING HABITS/NUTRITION
+            WEIGHT
+            STRESS AND STRESS MANAGEMENT
+            HEALTH
+            MORE CONFIDENT MINDSET
+            LIFE SATISFACTION.
+        </p>
+    </div>
+
+    <div class="portion">
+        <h2>TESTIMONIALS</h2>
+    </div>
+
+    <div id="portion3" class="info">
+        <h3>TESTIMONIALS</h3>
+
+        <section id="carousel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
+                        <div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                            <!-- Carousel indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#fade-quote-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                                <li data-target="#fade-quote-carousel" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Carousel items -->
+                            <div id="tstmnls" class="carousel-inner">
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div class="portion two">
+        <h2>CONTACT</h2>
+    </div>
+
+    <!-- Contact Form -->
+    <div id="portion4" class="info">
+        <h3>CONTACT</h3>
+
+        <div class="left">
+            <div class="Cf">
+                <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                        <label for="name">Your name:</label><br />
+                        <input id="name" class="input" name="name" type="text" value="" size="80" /><br />
+                    </div>
+                    <div class="row">
+                        <label for="email">Your email:</label><br />
+                        <input id="email" class="input" name="email" type="text" value="" size="80" /><br />
+                    </div>
+                    <div class="row">
+                        <label for="message">Your message:</label><br />
+                        <textarea id="message" class="input" name="message" rows="7" cols="80"></textarea><br />
+                    </div>
+                    <input id="submit_button" type="submit" value="Send" />
+                </form>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <!-- Google Map -->
+            <div id="map" style="width:400px;height:400px;background:white"></div>
+            <script>
+          function myMap() {
+          var mapOptions = {
+              center: new google.maps.LatLng(-37.68611, 176.16667),
+              zoom: 10,
+              mapTypeId: google.maps.MapTypeId.HYBRID
+          }
+          var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+          }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcWdnI9kscae5TOKIkZv7twAp5DY2Jc6Y&callback=myMap"></script>
+        </div>
+
+    </div>
+
+    <footer class="info">
+        <div id="toTop"><a href="#"><img src="https://iaibloggertips.files.wordpress.com/2014/05/70966-back-to-top-button-for-blogger4.png"></a></div>
+        <p>&copy; Jo's wellness clinic 2017</p>
+    </footer>
+
+    <!-- This script checks if JQuery is loaded or not -->
+
+
+    <script src="js/style.js"></script>
+
+</body>
+</html>

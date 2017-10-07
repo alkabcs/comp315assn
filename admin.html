@@ -5,6 +5,9 @@
   <title>Login Form</title>
   <link rel="stylesheet" type="text/css" href="css/admin.css">
   <script type="text/javascript" src="js/scripts.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <!--test-->
 <body>
@@ -16,8 +19,8 @@
       <div id="login_div">
         <div>
           <form id="login_form">
-            <input id="username_input" type="text" name="username" placeholder="username">
-            <input id="password_input" type="password" name="password" placeholder="password">
+            <input id="username_input" class="txtBox" type="text" name="username" placeholder="username">
+            <input id="password_input" class="txtBox" type="password" name="password" placeholder="password">
           </form>
         </div>
         <button id="Login" onclick="login()">Login</button>

@@ -1,0 +1,1 @@
+ALTER TABLE `appointment` ADD `Confirmed` BOOLEAN NOT NULL DEFAULT FALSE AFTER `treat_id`;

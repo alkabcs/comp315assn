@@ -6,7 +6,7 @@
 
   $result = mysqli_query($con, $query);
   echo "<div>";
-  echo "<input type=\"text\" id=\"myInput\" onkeyup=\"client_search()\" placeholder=\"Client search...\">";
+  echo "<input type=\"text\" id=\"myInput\" onkeyup=\"client_search()\" class=\"txtBox\" placeholder=\"Client search...\">";
   echo "<button id=\"client_new\" onclick=\"client_new()\">Add Client</button>";
   echo "<table id=\"client_list\">
   <tr>
