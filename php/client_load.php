@@ -43,19 +43,19 @@
   }
 
   echo "<div class='box name'>
-          <p>First Name: <input type='text' id='fname' name='fname' value='" . $fname . "'></p>
-          <p>Last Name: <input type='text' id='lname' value='" . $lname . "'></p> 
-          <p>Email: <input type='text' id='email' value='" . $email . "'></p>
+          <p>First Name: <input type='text' id='fname' name='fname' class='txtbox' value='" . $fname . "'></p>
+          <p>Last Name: <input type='text' id='lname' class='txtbox' value='" . $lname . "'></p> 
+          <p>Email: <input type='text' id='email' class='txtbox' value='" . $email . "'></p>
         </div>
         <div class='box info'>
-          <p>Address: <input type='text' id='address' value='" . $address . "'></p>
-          <p>Date of Birth: <input type='text' id='dob' placeholder='yyyy-mm-dd' value='" . $dob . "'></p> 
+          <p>Address: <input type='text' id='address' class='txtbox' value='" . $address . "'></p>
+          <p>Date of Birth: <input type='text' id='dob' placeholder='yyyy-mm-dd' class='txtbox' value='" . $dob . "'></p> 
           <p>Gender:  <select id='gender'>
                         <option>" . $gender . "</option>
                         <option>" . $gender_two . "</option>
                       </select></p>
-          <p>Home Phone: <input type='text' id='home' value='" . $home . "'></p> 
-          <p>Mobile Phone: <input type='text' id='mobile' value='" . $mobile . "'></p>
+          <p>Home Phone: <input type='text' id='home' class='txtbox' value='" . $home . "'></p> 
+          <p>Mobile Phone: <input type='text' id='mobile' class='txtbox' value='" . $mobile . "'></p>
         </div>
         <div class='box notes'>
           <p>Notes: <textarea id='notes'>" . $notes . "</textarea></p>
@@ -64,25 +64,27 @@
   if ($gender == 'Female'){
       echo "<div class='questionnaire'>
           <p>How did you hear about my clinic</p>
-          <input type='text' id='hear_about' value='" . $q_find . "'> 
+          <input type='text' id='hear_about' class='txtbox' value='" . $q_find . "'> 
           <p>Have you had any injuries past or present</p>
-          <input type='text' id='injuries' value='" . $q_injuries . "'>
+          <input type='text' id='injuries' class='txtbox' value='" . $q_injuries . "'>
           <p>Do you suffer from any health conditions</p>
-          <input type='text' id='health_conditions' value='" . $q_health . "'>
+          <input type='text' id='health_conditions' class='txtbox' value='" . $q_health . "'>
           <p>Have you had a message before</p>
-          <input type='text' id='massage_type' value='" . $q_massage . "'>
+          <input type='text' id='massage_type' class='txtbox' value='" . $q_massage . "'>
           <p>Massage Preferences</p>
-          <input type='text' id='massage_type' value='" . $q_type . "'>
+          <input type='text' id='massage_type' class='txtbox' value='" . $q_type . "'>
           <p>Use of aromatherapy</p>
-          <input type='text' id='oils' value='" . $q_oils . "'>
+          <input type='text' id='oils' class='txtbox' value='" . $q_oils . "'><br>
+          <button id='update' onclick='client_update(" . $cid . ")'>Update</button>
        </div>";
   } else if ($gender == 'Male') {
     echo "<div class='questionnaire'>
-            <p>How did you hear about my clinic? <input type='text' id='hear_about' value='" . $q_find . "'></p>
+            <p>How did you hear about my clinic? <input type='text' id='hear_about' class='txtbox' value='" . $q_find . "'></p>
+            <button id='update' onclick='client_update(" . $cid . ")'>Update</button>
           </div>";
   }
 
-  echo "<div class=''><button id='update' onclick='client_update(" . $cid . ")'>Update</button></div>";
+  
         
 
   mysqli_close($con);

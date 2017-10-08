@@ -110,3 +110,207 @@ Stack trace:
 [08-Oct-2017 14:03:45 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
 [08-Oct-2017 14:03:47 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
 [08-Oct-2017 14:03:49 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:27:25 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:27:26 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:27:32 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:27:35 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:27:37 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:27:42 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:27:42 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:27:44 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:27:45 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:28:44 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:28:46 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:28:46 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:28:48 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:28:48 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:29:39 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:29:39 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:29:41 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:29:41 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:30:05 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:30:06 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:30:07 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:30:08 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:30:09 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:31:39 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:31:40 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:31:42 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:31:43 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:31:44 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:31:48 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:33:09 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:33:10 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:33:11 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:33:12 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:33:54 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:33:55 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:33:55 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:33:57 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:34:17 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:34:31 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:34:32 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:34:33 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:34:34 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:34:34 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:34:37 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:34:43 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:34:43 NZ] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in C:\comp315assn\php\client_load.php on line 20
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: fname in C:\comp315assn\php\client_load.php on line 46
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: lname in C:\comp315assn\php\client_load.php on line 47
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: email in C:\comp315assn\php\client_load.php on line 48
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: address in C:\comp315assn\php\client_load.php on line 51
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: dob in C:\comp315assn\php\client_load.php on line 52
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: gender in C:\comp315assn\php\client_load.php on line 54
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: gender_two in C:\comp315assn\php\client_load.php on line 55
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: home in C:\comp315assn\php\client_load.php on line 57
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: mobile in C:\comp315assn\php\client_load.php on line 58
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: notes in C:\comp315assn\php\client_load.php on line 61
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: gender in C:\comp315assn\php\client_load.php on line 64
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: gender in C:\comp315assn\php\client_load.php on line 79
+[08-Oct-2017 14:34:43 NZ] PHP Notice:  Undefined variable: cid in C:\comp315assn\php\client_load.php on line 85
+[08-Oct-2017 14:35:16 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:35:18 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:35:20 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:35:22 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:35:23 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:35:26 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:35:29 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:36:12 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:36:14 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:36:17 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:36:18 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:36:21 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:36:24 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:36:46 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:36:49 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:37:02 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:37:04 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:37:15 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:37:17 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:37:35 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:37:38 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:37:39 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:37:42 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:37:50 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:37:52 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:37:55 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:40:43 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:40:45 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:40:47 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:40:49 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:40:53 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:44:49 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:44:52 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:44:54 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:44:57 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:45:12 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:45:15 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:45:19 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:47:18 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:47:18 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:47:20 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:47:21 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:47:27 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:47:27 NZ] PHP Notice:  Undefined index: schedule in C:\comp315assn\php\function.php on line 8
+[08-Oct-2017 14:47:27 NZ] PHP Fatal error:  Uncaught Error: Call to undefined function opendb() in C:\comp315assn\php\function.php:89
+Stack trace:
+#0 C:\comp315assn\php\function.php(12): getreport('01-10-2017', '18-10-2017', '1')
+#1 {main}
+  thrown in C:\comp315assn\php\function.php on line 89
+[08-Oct-2017 14:48:18 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:48:18 NZ] PHP Notice:  Undefined index: schedule in C:\comp315assn\php\function.php on line 8
+[08-Oct-2017 14:48:18 NZ] PHP Notice:  Undefined variable: con in C:\comp315assn\php\function.php on line 89
+[08-Oct-2017 14:48:18 NZ] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\comp315assn\php\function.php on line 89
+[08-Oct-2017 14:49:13 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:49:18 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:49:18 NZ] PHP Notice:  Undefined index: report in C:\comp315assn\php\function.php on line 7
+[08-Oct-2017 14:49:18 NZ] PHP Fatal error:  Uncaught Error: Call to undefined function opendb() in C:\comp315assn\php\function.php:30
+Stack trace:
+#0 C:\comp315assn\php\function.php(15): getschedule('01-10-2017', '18-10-2017', '1')
+#1 {main}
+  thrown in C:\comp315assn\php\function.php on line 30
+[08-Oct-2017 14:49:33 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:49:34 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:49:36 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:49:36 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:49:39 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:49:39 NZ] PHP Notice:  Undefined index: schedule in C:\comp315assn\php\function.php on line 8
+[08-Oct-2017 14:49:39 NZ] PHP Notice:  Undefined variable: con in C:\comp315assn\php\function.php on line 89
+[08-Oct-2017 14:49:39 NZ] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\comp315assn\php\function.php on line 89
+[08-Oct-2017 14:49:44 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:49:44 NZ] PHP Notice:  Undefined index: schedule in C:\comp315assn\php\function.php on line 8
+[08-Oct-2017 14:49:44 NZ] PHP Notice:  Undefined variable: con in C:\comp315assn\php\function.php on line 89
+[08-Oct-2017 14:49:44 NZ] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\comp315assn\php\function.php on line 89
+[08-Oct-2017 14:52:02 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:52:05 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:52:08 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:52:10 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:52:12 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:52:16 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:52:17 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:52:20 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:52:20 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:52:27 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:52:33 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:52:33 NZ] PHP Notice:  Undefined index: report in C:\comp315assn\php\function.php on line 7
+[08-Oct-2017 14:52:33 NZ] PHP Notice:  Undefined variable: con in C:\comp315assn\php\function.php on line 30
+[08-Oct-2017 14:52:33 NZ] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\comp315assn\php\function.php on line 30
+[08-Oct-2017 14:53:04 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:53:06 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:53:08 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:53:13 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:53:13 NZ] PHP Notice:  Undefined index: report in C:\comp315assn\php\function.php on line 7
+[08-Oct-2017 14:53:13 NZ] PHP Notice:  Undefined variable: con in C:\comp315assn\php\function.php on line 30
+[08-Oct-2017 14:53:13 NZ] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\comp315assn\php\function.php on line 30
+[08-Oct-2017 14:53:15 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:53:15 NZ] PHP Notice:  Undefined index: report in C:\comp315assn\php\function.php on line 7
+[08-Oct-2017 14:53:15 NZ] PHP Notice:  Undefined variable: con in C:\comp315assn\php\function.php on line 30
+[08-Oct-2017 14:53:15 NZ] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in C:\comp315assn\php\function.php on line 30
+[08-Oct-2017 14:56:22 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:56:25 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:56:26 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:56:30 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:56:30 NZ] PHP Notice:  Undefined index: report in C:\comp315assn\php\function.php on line 7
+[08-Oct-2017 14:56:30 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:56:34 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:56:34 NZ] PHP Notice:  Undefined index: report in C:\comp315assn\php\function.php on line 7
+[08-Oct-2017 14:56:34 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:58:51 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:58:51 NZ] PHP Notice:  Undefined index: report in C:\comp315assn\php\function.php on line 7
+[08-Oct-2017 14:58:51 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:58:58 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 14:58:58 NZ] PHP Notice:  Undefined index: report in C:\comp315assn\php\function.php on line 7
+[08-Oct-2017 14:58:58 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:06:32 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:06:34 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:06:36 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:06:40 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:06:42 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:06:43 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:06:44 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:06:49 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:06:50 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:08:23 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:20:56 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:21:32 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:21:34 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:21:34 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:21:37 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:21:37 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:21:41 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:24:57 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:32:29 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:32:37 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:32:44 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:39:29 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:39:29 NZ] PHP Notice:  Undefined index: report in C:\comp315assn\php\function.php on line 7
+[08-Oct-2017 15:39:29 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:39:33 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:39:33 NZ] PHP Notice:  Undefined index: report in C:\comp315assn\php\function.php on line 7
+[08-Oct-2017 15:39:33 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:40:14 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:40:16 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7
+[08-Oct-2017 15:40:16 NZ] PHP Notice:  Undefined index: id in C:\comp315assn\php\client_new.php on line 5
+[08-Oct-2017 15:40:16 NZ] PHP Notice:  Undefined index: name in C:\comp315assn\php\client_new.php on line 6
+[08-Oct-2017 15:41:17 NZ] PHP Warning:  mysqli::__construct(): Headers and client library minor version mismatch. Headers:50541 Library:50634 in C:\comp315assn\php\functions.php on line 7

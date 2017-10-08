@@ -52,7 +52,7 @@ p {
 }
 
 form {
-	max-width: 400px;
+	max-width: 66%;
 	min-width: 400px;
 }
 
@@ -61,13 +61,13 @@ form {
   padding: 20px 175px 20px 110px;
   margin: 0 auto;
   position: relative;
-  width: calc(100%-250px);
+  width: 100%;
   box-sizing: border-box;
 }
 
 .btn_group button {
   display: block;
-  width: 100%;
+  width: 90%;
 }
 
 .txtBox {
@@ -139,10 +139,12 @@ button:hover {
 
 .sidebar {
   grid-area: sidebar;
+  width: 33%;
 }
 
 .content {
   grid-area: content;
+  width: 66%;
 }
 
 .header {
@@ -180,7 +182,7 @@ button:hover {
   background-color: #444;
   color: #fff;
   padding: 20px;
-  width: calc(100%-250px);
+  width: 100%;
 }
 
 .header {
@@ -189,8 +191,4 @@ button:hover {
 
 .sidebar {
   max-width: 250px;
-}
-
-.content {
-  width: calc(100%-250px);
 }

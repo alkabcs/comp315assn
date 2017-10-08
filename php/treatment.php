@@ -9,7 +9,6 @@
   echo "<table id=\"client_list\">
   <caption>Treatments</caption>
   <tr>
-  <th>ID</th>
   <th>Type</th>
   <th>Time</th>
   <th>Fee</th>
@@ -23,8 +22,7 @@
 
     $time = explode(':', $time);
 
-    echo "<tr class='discounts' onclick='javascript:treatment_load()' id = '" . $id . "'>";
-    echo "<td>" . $id . "</td>";
+    echo "<tr>";
     echo "<td>" . $name . "</td>";
     echo "<td align='right'>" . (($time[0]*60) + ($time[1])) . "</td>";
     echo "<td align='right'>$" . $fee . "</td>";

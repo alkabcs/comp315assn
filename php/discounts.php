@@ -9,7 +9,6 @@
   echo "<table id=\"client_list\">
   <caption>Discounts</caption>
   <tr>
-  <th>ID</th>
   <th>Name</th>
   <th>Discount Percentage</th>
   </tr>";
@@ -19,8 +18,7 @@
     $name    = $row['disc_name'];
     $price   = $row['disc_price'];
 
-    echo "<tr class='discounts' onclick='javascript:discount_load()' id = '" . $id . "'>";
-    echo "<td>" . $id . "</td>";
+    echo "<tr>";
     echo "<td>" . $name . "</td>";
     echo "<td align='right'>" . $price . "</td>";
     echo "</tr>";

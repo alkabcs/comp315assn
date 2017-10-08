@@ -6,8 +6,8 @@
 
   $result = mysqli_query($con, $query);
   echo "<div>";
-  echo "<input type=\"text\" id=\"myInput\" onkeyup=\"client_search()\" class=\"txtBox\" placeholder=\"Client search...\">";
   echo "<button id=\"client_new\" onclick=\"client_new()\">Add Client</button>";
+  echo "<input type=\"text\" id=\"myInput\" onkeyup=\"client_search()\" class=\"txtBox\" placeholder=\"Client search...\">";
   echo "<table id=\"client_list\">
   <tr>
   <th>ID</th>
@@ -29,7 +29,8 @@
     echo "<td>" . $email . "</td>";
     echo "</tr>";
   }
-  echo "<div>";
+  echo "</table>";
+  echo "</div>";
 
   mysqli_close($con);
 

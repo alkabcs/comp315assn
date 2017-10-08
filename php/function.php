@@ -1,5 +1,5 @@
 <?php
-require_once('functions.php');
+include_once('functions.php');
 // testing commits to remote origin
 $fromdate = $_GET["fromdate"];
 $todate = $_GET["todate"];
@@ -26,11 +26,11 @@ if(isset($fromdate) && isset($todate)){
 			"a.Confirmed = " . $Confirmed . 
 			" and a.appt_date between STR_TO_DATE('" . $fromdate . "', '%d-%m-%Y') " . 
 			" and STR_TO_DATE('" . $todate . "', '%d-%m-%Y')";
-
-			$conn = opendb();
-
-	 $result = mysqli_query($conn, $query) or die ('error query failed accessing data');
 	
+	$con = connection();
+	
+	$result = mysqli_query($con, $query);
+
 	echo "<table id=\"client_list\">
 		<tr>
 		<th>Confirmed</th>
@@ -85,10 +85,10 @@ if(isset($fromdate) && isset($todate)){
 			"a.appt_paid = " . $paid . 
 			" and a.appt_date between STR_TO_DATE('" . $fromdate . "', '%d-%m-%Y') " . 
 			" and STR_TO_DATE('" . $todate . "', '%d-%m-%Y') group by t.treat_type, t.treat_fee, d.disc_price";
+ 
+	$con = connection();
 
-			$conn = opendb();
-
-	 $result = mysqli_query($conn, $query) or die ('error query failed accessing data');
+	$result = mysqli_query($con, $query) or die ('error query failed accessing data');
 	
 	echo "<table id=\"client_list\">
 		<tr>
