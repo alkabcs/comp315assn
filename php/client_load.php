@@ -85,7 +85,6 @@
        </div>";
   } else if ($gender == 'Male') {
     echo "<div class='questionnaire'>
-            <p>How did you hear about my clinic? <input type='text' id='hear_about' class='txtbox' value='" . $q_find . "'></p>
             <button id='update' onclick='client_update(" . $cid . ")'>Update</button>
           </div>";
   }

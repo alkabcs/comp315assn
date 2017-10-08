@@ -11,7 +11,7 @@
                         WHERE a.appt_date 
                             BETWEEN CURDATE() 
                             AND DATE_ADD(CURDATE(), INTERVAL 7 DAY)
-                        ORDER BY a.appt_date ASC";
+                        ORDER BY a.appt_date, a.appt_start_time ASC";
 
     $result = mysqli_query($con, $query);
 

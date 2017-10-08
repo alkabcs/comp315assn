@@ -6,6 +6,13 @@ function login() {
   httpRequest('login_div', 'GET', "php/login.php?username=" + username + "&password=" + password, true);
 }
 
+function client_login(){
+  var username = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+
+  httpRequest('client_load', 'GET', 'php/client_login.php?username=' + username + '&password=' + password, true);
+}
+
 function logout() {
   location.reload(true);
 }

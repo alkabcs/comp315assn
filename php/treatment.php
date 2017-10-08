@@ -2,7 +2,7 @@
 
   include_once('functions.php');
   
-  $query = "SELECT * FROM treatment";
+  $query = "SELECT * FROM treatment ORDER BY treat_time ASC";
 
   $result = mysqli_query($con, $query);
 
@@ -24,8 +24,8 @@
 
     echo "<tr>";
     echo "<td>" . $name . "</td>";
-    echo "<td align='right'>" . (($time[0]*60) + ($time[1])) . "</td>";
-    echo "<td align='right'>$" . $fee . "</td>";
+    echo "<td class='price'>" . (($time[0]*60) + ($time[1])) . "</td>";
+    echo "<td class='price'>$" . $fee . "</td>";
     echo "</tr>";
   }
 

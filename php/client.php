@@ -2,7 +2,7 @@
 
   include_once('functions.php');
   
-  $query = "SELECT * FROM client";
+  $query = "SELECT * FROM client ORDER BY client_fname ASC";
 
   $result = mysqli_query($con, $query);
   echo "<div>";

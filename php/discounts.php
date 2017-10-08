@@ -2,7 +2,7 @@
 
   include_once('functions.php');
   
-  $query = "SELECT * FROM discount";
+  $query = "SELECT * FROM discount ORDER BY disc_price";
 
   $result = mysqli_query($con, $query);
 
@@ -20,7 +20,7 @@
 
     echo "<tr>";
     echo "<td>" . $name . "</td>";
-    echo "<td align='right'>" . $price . "</td>";
+    echo "<td class='price'>" . $price . "</td>";
     echo "</tr>";
   }
 
