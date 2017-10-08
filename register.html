@@ -1,0 +1,119 @@
+<html>
+    <head>
+        
+        <link href="css/register.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+        <script src="js/register.js" type="text/javascript"></script>
+        
+    </head>
+        
+    <body>
+        <div class="site-container">
+            <header class="banner">
+                <img src="images/logo.png">
+            </header>
+            <main class="content">
+            <form name="register">
+                <fieldset class="box" id="first">
+                    <div class="formContain">
+                        <h1>Account Information</h1>
+                        <input type="text" placeholder="Email Address" name="email" id="email">
+                        <input type="password" placeholder="Password" name="pass" id="password">
+                        <input type="password" placeholder="Confirm Password" name="cpass">
+                    </div>
+                    <div class="buttonBox">
+                        <button id="cancel" value="Cancel" onclick="window.location.href='index.html'">Cancel</button>
+                        <input type="button" onclick="nex_step1()" id="nex_btn1" class="nxtBtn" name="next" value="Next"/>
+                    </div>
+                </fieldset>
+                <fieldset class="box" id="second">
+                    <div class="formContain">
+                        <h1>Personal Information</h1>
+                        <input type="text" placeholder="First Name" name="fname" id="fname">
+                        <input type="text" placeholder="Last Name" name="lname" id="lname">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" placeholder="Date of Birth" name="dob" id="dob">
+                        <input type="text" placeholder="Home Phone(Optional)" name="home" id="home">
+                        <input type="text" placeholder="Mobile Phone" name="mob" id="mob">
+                        <div id="gender-container">
+                            <label>Gender:</label>
+                            <input type="radio" name="gender" id="genderSelection-male" required> <label for="genderselection-male">Male</label>
+                            <input type="radio" name="gender" id="genderSelection-female" required> <label for="genderselection-female">Female</label>
+                        </div>
+
+                        <textarea id="address" name="address" placeholder="Enter Address"></textarea>
+                    </div>
+                    <div class="buttonBox">
+                            <input type="button" onclick="prev_step2()" id="prev_btn1" class="prevBtn" name="prev" value="previous">
+                            <input type="button"  onclick="nex_step3()"id="nex_btn2" class="nxtBtn" name="next" value="Next">
+                    </div>
+                </fieldset>
+                <fieldset class="box" id="third">
+                        <div class="formContain">
+                            <h1>Medical Information</h1>
+                            <textarea name="injury" id="injury" placeholder="Have you had any injuries past or present?"></textarea>
+                            <textarea name="condition" id="condition" placeholder="Is there any other health condition you would like me to know about"></textarea>
+                        </div>
+                        <div class="buttonBox">
+                            <input onclick="prev_step3()" type="button" id="prev_btn3" class="prevBtn" name="prev" value="previous">
+                            <input type="button" onclick="nex_step4()" id="nex_btn2" class="nxtBtn" name="next" value="Next">
+                        </div>
+                </fieldset>
+                <fieldset class="box" id="four">
+                        <div class="formContain">
+                            <h1>Massage Information</h1>
+                            <label for="interest">Are you interested in massages?</label>
+                            <select id="wantmass" name="interest" onchange="showfield(this.options[this.selectedIndex].value)">
+                                <option value="" disabled selected>Select Option...</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                            <div id="hidden1">
+                                <label for="massageBefore">Have you had a massage before?</label>
+                                <select id="massbefore" name="massageBefore" onchange="showfield1(this.options[this.selectedIndex].value)">
+                                    <option value="" disabled selected>Select Option...</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div id="hidden2">
+                                <label for="massagetype">Do you prefer a relaxing or firmer massage?</label>
+                                <select id="massagetype" name="MassageType">
+                                    <option value="" disabled selected>Select Option...</option>
+                                    <option value="relax">Relaxing</option>
+                                    <option value="firm">Firmer</option>
+                                </select>
+                                <label for="aromatherapy">Would you like me to use aromatherapy oils</label>
+                                <select id="arom" name="aromatherapy">
+                                    <option value="" disabled selected>Select Option...</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="buttonBox">
+                            <input onclick="prev_step4()" type="button" id="prev_btn3" class="prevBtn" name="prev" value="previous">
+                            <input type="button" onclick="nex_stepf()" id="nex_btn2" class="nxtBtn" name="next" value="Next">
+                        </div>
+                </fieldset>
+                <fieldset class="box" id="final">
+                        <div class="formContain">
+                            <h1>Additional Information</h1>
+                            <textarea name="hear" id="contact" placeholder="How did you hear about my clinic"></textarea>
+                        </div>
+                        <div class="buttonBox">
+                            <input type="button" onclick="prev_stepf()" name="previous" class="prev_btnf" value="Previous" />
+                            <input type="submit" name="submitreg" value="Submit" />
+                        </div>  
+                </fieldset>
+              
+            </form>
+
+           </main> 
+           <footer>
+           </footer>
+            
+        </div>
+    </body>    
+
+</html>  

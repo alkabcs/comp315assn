@@ -18,40 +18,21 @@ function logout() {
   location.reload(true);
 }
 
-// Standard ajaxRequest
-function ajaxRequest(method, url, data, callback) {
-  var request = new XMLHttpRequest();
-  request.open(method, url);
-
-  if (method == 'POST') {
-    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-  }
-
-  request.onreadystatechange = function() {
-    if (request.readyState == 4 && request.status == 200) {
-      var response = request.responseText;
-      callback(response);
-    } else {
-      alert("ReadyState = " + request.readyState +
-              ". Status = " + request.status);
+// Standard httpRequest
+function httpRequest(destination, method, url, async) {
+  $("#pcontent").html("");
+  
+  var list = document.getElementById(destination);
+  list.innerHTML = "";
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      list.innerHTML = this.responseText;
     }
-  }
+  };
 
-  request.send(data);
-}
-
-function client() {
-    var list = document.getElementById('admin_load');
-    list.innerHTML = "";
-
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-          list.innerHTML = this.responseText;
-      }
-    };
-    xhttp.open("GET", "php/client.php", true);
-    xhttp.send();
+  xhttp.open(method, url, async);
+  xhttp.send();
 }
 
 function client_search() {
@@ -80,14 +61,8 @@ function client_load() {
     var list = document.getElementById('admin_load');
     var id = document.getElementById(name).innerHTML;
 
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-          list.innerHTML = this.responseText;
-      }
-    };
-    xhttp.open("GET", "php/client_load.php?name=" + name + "&id=" + id, true);
-    xhttp.send();
+    httpRequest('admin_load', 'GET', "php/client_load.php?name=" + name + "&id=" + id, true);
+        
   }
 }
 
@@ -102,25 +77,20 @@ function client_update(cid) {
     var mobile = document.getElementById('mobile').value;
     var notes = document.getElementById('notes').value;
 
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        document.getElementById('admin_load').innerHTML = this.responseText;
-      }
-    };
-    xhttp.open("GET", "php/client_update.php?cid=" + cid + "&fname=" + fname + "&lname=" + lname + "&email=" + email + "&address=" + address + "&dob=" + dob + "&gender=" + gender + "&home=" + home + "&mobile=" + mobile + "&notes=" + notes, true);
-    xhttp.send();
+    httpRequest('admin_load', 'GET', "php/client_update.php?cid=" + cid 
+                  + "&fname=" + fname 
+                  + "&lname=" + lname 
+                  + "&email=" + email 
+                  + "&address=" + address 
+                  + "&dob=" + dob 
+                  + "&gender=" + gender 
+                  + "&home=" + home 
+                  + "&mobile=" + mobile 
+                  + "&notes=" + notes, true);    
 }
 
 function client_new() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById('admin_load').innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "php/client_new.php?", true);
-  xhttp.send();
+  httpRequest('admin_load', 'GET', 'php/client_new.php?', true);
 }
 
 function client_add() {
@@ -143,21 +113,6 @@ function client_add() {
   xhttp.send();
 }
 
-function discount() {
-  var content = document.getElementById('admin_load');
-  content.innerHTML = "";
-
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      content.innerHTML = this.responseText;
-    }
-  };
-
-  xhttp.open("GET", "php/discounts.php", true);
-  xhttp.send();
-}
-
 function discount_load() {
   document.getElementById('admin_load').onclick = function(event) {
     var target = event.target || event.srcElement;
@@ -165,50 +120,24 @@ function discount_load() {
     var list = document.getElementById('admin_load');
     var id = document.getElementById(name).firstElementChild.innerHTML;
 
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readState == 4 && this.status == 200) {
-        list.innerHTML = this.responseText;
-      }
-    };
-
-    xhttp.open("GET", "php/discount_load.php?disc_id=" + id, true);
-    xhttp.send();
+    httpRequest('admin_load', 'GET', 'php/discount_load.php?disc_id=' + id, true);
   }
-}
-
-function treatment() {
-  var content = document.getElementById('admin_load');
-  content.innerHTML = "";
-
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      content.innerHTML = this.responseText;
-    }
-  };
-
-  xhttp.open("GET", "php/treatment.php", true);
-  xhttp.send();
 }
 
 function treatment_load() {
   document.getElementById('admin_load').onclick = function(event) {
+    document.getElementById('boxdata').innerHTML = "";
     var target = event.target || event.srcElement;
     var name = target.innerHTML;
     var list = document.getElementById('admin_load');
     var id = document.getElementById(name).firstElementChild.innerHTML;
 
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        list.innerHTML = this.responseText;
-      }
-    };
-
-    xhttp.open("GET", "php/treatment_load.php?treat_id=" + id, true);
-    xhttp.send();
+    httpRequest('admin_load', 'GET', 'php/treatment_load.php?treat_id=' + id, true);
   }
+}
+
+function treatment_update() {
+  
 }
 
 function schedule() {

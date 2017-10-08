@@ -1,5 +1,5 @@
 <?php
-require_once('opendb.php');
+require_once('functions.php');
 // testing commits to remote origin
 $fromdate = $_GET["fromdate"];
 $todate = $_GET["todate"];

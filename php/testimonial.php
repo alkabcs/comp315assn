@@ -1,12 +1,10 @@
 <?php
-		require_once('opendb.php');
+		require_once('functions.php');
 
 		$query = "select c.client_fname, testimonial_text from testimonial t " . 
 		" join client c on c.client_id = t.client_id WHERE t.Active = 1";
-
-		$conn = opendb();
 	 
-		$result = mysqli_query($conn, $query) or die ('error query failed accessing data');
+		$result = mysqli_query($con, $query) or die ('error query failed accessing data');
 
 		$first = 0;
 		while($row = mysqli_fetch_assoc($result)) {

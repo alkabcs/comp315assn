@@ -18,12 +18,12 @@
   }
 
   echo "<div class=\"box name\">";
-  echo "<p>ID: " . $id . "</p>";
+  echo "<p>ID: <input type='text' id='" . $id . "' value='" . $id . "'></p>";
   echo "</div>";
   echo "<div class=\"box info\">";
-  echo "<p>Type: " . $type . "</p>";
-  echo "<p>Time: " . $time . "</p>";
-  echo "<p> Fee: " . $fee  . "</p>";
+  echo "<p>Type: <input type='text' id='" . $type . "' value='" . $type . "'></p>";
+  echo "<p>Time: <input type='text' id='" . $time . "' value='" . $time . "'></p>";
+  echo "<p> Fee: <input type='text' id='" . $fee  . "' value='" . $fee . "'></p>";
   echo "<button id=\"update\" onclick=\"treatment_update('" . $id . "')\">Update</button>";
   echo "</div>";
 

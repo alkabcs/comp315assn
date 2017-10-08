@@ -13,7 +13,16 @@
   $mobile = $_GET['mobile'];
   $notes = $_GET['notes'];
 
-  $query = "UPDATE client SET client_fname='" . $fname . "', client_lname='" . $lname . "', client_email='" . $email . "', client_address='" . $address . "', client_dob='" . $dob . "', client_gender='" . $gender . "', client_home='" . $home . "', client_mobile='" . $mobile . "' WHERE client_id='" . $id . "'";
+  $query = "UPDATE client 
+            SET client_fname='" . $fname . "', 
+                client_lname='" . $lname . "', 
+                client_email='" . $email . "', 
+                client_address='" . $address . "', 
+                client_dob='" . $dob . "', 
+                client_gender='" . $gender . "', 
+                client_home='" . $home . "', 
+                client_mobile='" . $mobile . "' 
+            WHERE client_id='" . $id . "'";
 
   $result = mysqli_query($con, $query);
 

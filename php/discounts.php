@@ -7,10 +7,11 @@
   $result = mysqli_query($con, $query);
 
   echo "<table id=\"client_list\">
+  <caption>Discounts</caption>
   <tr>
   <th>ID</th>
   <th>Name</th>
-  <th>Price</th>
+  <th>Discount Percentage</th>
   </tr>";
 
   while($row = mysqli_fetch_assoc($result)) {
@@ -21,7 +22,7 @@
     echo "<tr class='discounts' onclick='javascript:discount_load()' id = '" . $id . "'>";
     echo "<td>" . $id . "</td>";
     echo "<td>" . $name . "</td>";
-    echo "<td>" . $price . "</td>";
+    echo "<td align='right'>" . $price . "</td>";
     echo "</tr>";
   }
 

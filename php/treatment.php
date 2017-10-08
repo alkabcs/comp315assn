@@ -7,6 +7,7 @@
   $result = mysqli_query($con, $query);
 
   echo "<table id=\"client_list\">
+  <caption>Treatments</caption>
   <tr>
   <th>ID</th>
   <th>Type</th>
@@ -20,11 +21,13 @@
     $time    = $row['treat_time'];
     $fee     = $row['treat_fee'];
 
+    $time = explode(':', $time);
+
     echo "<tr class='discounts' onclick='javascript:treatment_load()' id = '" . $id . "'>";
     echo "<td>" . $id . "</td>";
     echo "<td>" . $name . "</td>";
-    echo "<td>" . $time . "</td>";
-    echo "<td>" . $fee . "</td>";
+    echo "<td align='right'>" . (($time[0]*60) + ($time[1])) . "</td>";
+    echo "<td align='right'>$" . $fee . "</td>";
     echo "</tr>";
   }
 

@@ -13,17 +13,17 @@
         <div class="box header">
           <?php
             $username = $_COOKIE['username'];
-            print ("<p>Welcome " . $username . "</br>" . date("D M d, Y G:i a") . "</p>");
+            print ("<p>Welcome Jo</br>" . date("D M d, Y G:i a") . "</p>");
           ?>
 
         </div>
         <div class="box sidebar">
           <div class="btn_group">
-            <button onclick="client()">Client</button>
-            <button onclick="">Appointments</button>
+            <button onclick="httpRequest('admin_load', 'GET', 'php/client.php', 'true')">Client</button>
+            <button onclick="httpRequest('admin_load', 'GET', 'php/appointments.php', 'true')">Appointments</button>
             <button onclick="schedule()">Schedule</button>
-            <button onclick="treatment()">Treatments</button>
-            <button onclick="discount()">Discounts</button>
+            <button onclick="httpRequest('admin_load', 'GET', 'php/treatment.php', 'true')">Treatments</button>
+            <button onclick="httpRequest('admin_load', 'GET', 'php/discounts.php', 'true')">Discounts</button>
             <button onclick="gotoreports()">View Reports</button>
             <button onclick="logout()">Logout</button>
           </div>
