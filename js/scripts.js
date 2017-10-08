@@ -3,15 +3,7 @@ function login() {
   var username = document.forms["login_form"]["username_input"].value;
   var password = document.forms["login_form"]["password_input"].value;
 
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("login_div").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "php/login.php?username=" + username + "&password=" + password, true);
-  xhttp.send();
-
+  httpRequest('login_div', 'GET', "php/login.php?username=" + username + "&password=" + password, true);
 }
 
 function logout() {
@@ -77,7 +69,9 @@ function client_update(cid) {
     var mobile = document.getElementById('mobile').value;
     var notes = document.getElementById('notes').value;
 
-    httpRequest('admin_load', 'GET', "php/client_update.php?cid=" + cid 
+
+    if (gender=='Male') {
+      httpRequest('admin_load', 'GET', "php/client_update.php?cid=" + cid 
                   + "&fname=" + fname 
                   + "&lname=" + lname 
                   + "&email=" + email 
@@ -86,7 +80,35 @@ function client_update(cid) {
                   + "&gender=" + gender 
                   + "&home=" + home 
                   + "&mobile=" + mobile 
-                  + "&notes=" + notes, true);    
+                  + "&notes=" + notes, true); 
+
+    } else if (gender=='Female') {
+      var find = document.getElementById('hear_about').value;
+      var injuries = document.getElementById('injuries').value;
+      var health = document.getElementById('health_conditions').value;
+      var massage_strength = document.getElementById('massage_strength').value;
+      var massage_type = document.getElementById('massage_type').value;
+      var oils = document.getElementById('oils').value;
+
+      httpRequest('admin_load', 'GET', "php/client_update.php?cid=" + cid 
+                  + "&fname=" + fname 
+                  + "&lname=" + lname 
+                  + "&email=" + email 
+                  + "&address=" + address 
+                  + "&dob=" + dob 
+                  + "&gender=" + gender 
+                  + "&home=" + home 
+                  + "&mobile=" + mobile 
+                  + "&notes=" + notes
+                  + "&q_find" + find
+                  + "&q_injuries" + injuries
+                  + "&q_health" + health
+                  + "&q_massage" + massage_strength
+                  + "&q_type" + massage_type
+                  + "&q_oils" + oils, true);
+    }
+
+     
 }
 
 function client_new() {
@@ -224,4 +246,30 @@ function getSchedule() {
     xhttp.open("GET", uri, true);
     xhttp.send();
 
+}
+
+function Confirm() {
+
+  var apptids = [];
+    $("#client_list tr").each(function () {
+        $("td > *", this).each(function () {
+            if (this.nodeName == "INPUT") {
+				//$(this).prop("checked")
+				var obj = {"confirmed": $(this).prop("checked"), "appt_id":$(this).val()};
+                apptids.push(obj);
+            }
+        });
+    });
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var data = this.responseText;
+            alert(data);
+        }
+    };
+    var uri = 'php/send_email.php?apptids=' + JSON.stringify(apptids);;
+    xhttp.open("GET", uri, true);
+    xhttp.send();
+	
 }

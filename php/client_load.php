@@ -26,20 +26,26 @@
     $address  = ucfirst($row['client_address']);
     $dob      = $row['client_dob'];
     $gender   = ucfirst($row['client_gender']);
+    $home     = $row['client_home'];
+    $mobile   = $row['client_mobile'];
+    $notes      = $row['appt_notes'];
+     
+
     if ($gender == 'Male') {
       $gender_two = 'Female';
     } else {
       $gender_two = 'Male';
+
+      $q_find     = $row['q_find'];
+      $q_injuries = $row['q_injuries'];
+      $q_health   = $row['q_health'];
+      $q_massage  = $row['q_massage'];
+      $q_type     = $row['q_type'];
+      $q_oils     = $row['q_oils'];
     }
-    $home       = $row['client_home'];
-    $mobile     = $row['client_mobile'];
-    $notes      = $row['appt_notes'];
-    $q_find     = $row['q_find'];
-    $q_injuries = $row['q_injuries'];
-    $q_health   = $row['q_health'];
-    $q_massage  = $row['q_massage'];
-    $q_type     = $row['q_type'];
-    $q_oils     = $row['q_oils'];
+    
+
+      
   }
 
   echo "<div class='box name'>
@@ -70,7 +76,7 @@
           <p>Do you suffer from any health conditions</p>
           <input type='text' id='health_conditions' class='txtbox' value='" . $q_health . "'>
           <p>Have you had a message before</p>
-          <input type='text' id='massage_type' class='txtbox' value='" . $q_massage . "'>
+          <input type='text' id='massage_firmness' class='txtbox' value='" . $q_massage . "'>
           <p>Massage Preferences</p>
           <input type='text' id='massage_type' class='txtbox' value='" . $q_type . "'>
           <p>Use of aromatherapy</p>
@@ -83,9 +89,6 @@
             <button id='update' onclick='client_update(" . $cid . ")'>Update</button>
           </div>";
   }
-
-  
-        
 
   mysqli_close($con);
 

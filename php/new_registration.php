@@ -2,26 +2,34 @@
 
     include_once('functions.php');
 
-    
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $dob = $_POST['dob'];
+    $home = $_POST['home'];
+    $mob = $_POST['mob'];
+    $address = $_POST['address'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
 
-/*
-$id = $_GET['cid'];
-  $fname = $_GET['fname'];
-  $lname = $_GET['lname'];
-  $email = $_GET['email'];
-  $address = $_GET['address'];
-  $dob = $_GET['dob'];
-  $gender = $_GET['gender'];
-  $home = $_GET['home'];
-  $mobile = $_GET['mobile'];
-  $notes = $_GET['notes'];
+    if ($_POST['genderSelection-female'] == "Yes") {
+        $gender = "female";
+        $find = $_POST['contact'];
+        $injury = $_POST['injury'];
+        $condition = $_POST['condition'];
+        $massbefore = $_POST['massbefore'];
+        $masstype = $_POST['masstype'];
+        $arom = $_POST['armon'];
 
-  $query = "INSERT INTO client (client_fname, client_lname, client_email, client_address, client_dob, client_gender, client_home, client_mobile, admin_id) 
-            VALUES ('" . $fname . "', '" . $lname . "', '" . $email . "', '" . $address . "', '" . $dob . "', '" . $gender . "', '" . $home . "', '" . $mobile . "', '1')";
+        $query = "INSERT INTO client () 
+                    VALUES ()";
 
-  $result = mysqli_query($con, $query);
+        $result = mysqli_query($con, $query);
 
-  mysqli_close($con);
-*/
+
+    } else if ($_POST['genderSelection-male'] == "Yes") {
+        $gender = "male";
+        
+    }
+
 ?>
 

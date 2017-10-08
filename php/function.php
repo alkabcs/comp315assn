@@ -114,8 +114,8 @@ if(isset($fromdate) && isset($todate)){
 		echo "<td>" . $Rate . "</td>";
 		echo "<td>" . $Discount . "</td>";
 		echo "<td>" . $Quantity . "</td>";
-		echo "<td>" . $Taxes . "</td>";
-		echo "<td>" . $Total . "</td>";
+		echo "<td>$" . $Taxes . "</td>";
+		echo "<td>$" . $Total . "</td>";
 		echo "</tr>";
 		if($paid == 1){
 			$totalpaid += $Total;

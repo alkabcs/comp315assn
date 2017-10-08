@@ -26,17 +26,25 @@
 
   $result = mysqli_query($con, $query);
 
-  mysqli_close($con);
-
-  $con = mysqli_connect('localhost', 'root', 'root', 'wellness_clinic');
-  if (mysqli_connect_errno()) {
-    echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
-
   $query = "UPDATE appointment SET appt_notes='" . $notes . "' WHERE client_id='" . $id . "'";
 
   $result = mysqli_query($con, $query);
 
+  if ($gender=='female') {
+
+    $query = "UPDATE questionnaire
+            SET q_find='" . $q_find . "',
+                q_injuries='" . $q_injuries . "',
+                q_health='" . $q_health . "',
+                q_massage='" . $q_massage . "',
+                q_type='" . $q_type . "',
+                q_oils='" . $q_oils . "'
+            WHERE questionnaire.client_id = '" . $id . "'";
+
+    $result = mysqli_query($con, $query);
+  }
+
   mysqli_close($con);
+
 
  ?>

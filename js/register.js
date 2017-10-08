@@ -116,7 +116,3 @@ function prev_stepf(){
     
     
 }
-
-function new_client() {
-    
-}

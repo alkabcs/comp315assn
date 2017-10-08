@@ -1,8 +1,7 @@
 <?php
 
   include_once('functions.php');
-
-
+  
   $username = $_GET["username"];
   $password = $_GET["password"];
   $_COOKIE['username'] = $username;

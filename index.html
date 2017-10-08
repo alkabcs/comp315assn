@@ -51,7 +51,8 @@
             <a href="#portion2">SERVICES</a>
             <a href="#portion3">TESTIMONIALS</a>
             <a href="#portion4">CONTACT</a>
-            <a href="register.html">BOOK</a>
+            <a data-toggle="modal" data-target="#signupModal">Signup</a>
+            <a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> login</a>
         </nav>
     </header>
 
@@ -161,7 +162,151 @@
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcWdnI9kscae5TOKIkZv7twAp5DY2Jc6Y&callback=myMap"></script>
         </div>
 
-    </div>
+        <!-- SIGNUP FORM -->
+        <div id="signupModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"> &times;</button>
+                        <h4>Signup</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form name="register" action="php/new_registration.php" method="POST">
+                            <fieldset class="box" id="first">
+                                <div class="formContain">
+                                    <h1>Account Information</h1>
+                                    <input type="text" placeholder="Email Address" name="email" id="email">
+                                    <input type="password" placeholder="Password" name="pass" id="password">
+                                    <input type="password" placeholder="Confirm Password" name="cpass">
+                                </div>
+                                <div class="buttonBox">
+                                    <button id="cancel" value="Cancel" onclick="window.location.href='index.html'">Cancel</button>
+                                    <input type="button" onclick="nex_step1()" id="nex_btn1" class="nxtBtn" name="next" value="Next"/>
+                                </div>
+                            </fieldset>
+                            <fieldset class="box" id="second">
+                                <div class="formContain">
+                                    <h1>Personal Information</h1>
+                                    <input type="text" placeholder="First Name" name="fname" id="fname">
+                                    <input type="text" placeholder="Last Name" name="lname" id="lname">
+                                    <label for="dob">Date of Birth</label>
+                                    <input type="date" placeholder="Date of Birth" name="dob" id="dob">
+                                    <input type="text" placeholder="Home Phone(Optional)" name="home" id="home">
+                                    <input type="text" placeholder="Mobile Phone" name="mob" id="mob">
+                                    <div id="gender-container">
+                                        <label>Gender:</label>
+                                        <input type="radio" name="gender" id="genderSelection-male" required> <label for="genderselection-male">Male</label>
+                                        <input type="radio" name="gender" id="genderSelection-female" required> <label for="genderselection-female">Female</label>
+                                    </div>
+
+                                    <textarea id="address" name="address" placeholder="Enter Address"></textarea>
+                                </div>
+                                <div class="buttonBox">
+                                        <input type="button" onclick="prev_step2()" id="prev_btn1" class="prevBtn" name="prev" value="previous">
+                                        <input type="button"  onclick="nex_step3()"id="nex_btn2" class="nxtBtn" name="next" value="Next">
+                                </div>
+                            </fieldset>
+                            <fieldset class="box" id="third">
+                                    <div class="formContain">
+                                        <h1>Medical Information</h1>
+                                        <textarea name="injury" id="injury" placeholder="Have you had any injuries past or present?"></textarea>
+                                        <textarea name="condition" id="condition" placeholder="Is there any other health condition you would like me to know about"></textarea>
+                                    </div>
+                                    <div class="buttonBox">
+                                        <input onclick="prev_step3()" type="button" id="prev_btn3" class="prevBtn" name="prev" value="previous">
+                                        <input type="button" onclick="nex_step4()" id="nex_btn2" class="nxtBtn" name="next" value="Next">
+                                    </div>
+                            </fieldset>
+                            <fieldset class="box" id="four">
+                                    <div class="formContain">
+                                        <h1>Massage Information</h1>
+                                        <label for="interest">Are you interested in massages?</label>
+                                        <select id="wantmass" name="interest" onchange="showfield(this.options[this.selectedIndex].value)">
+                                            <option value="" disabled selected>Select Option...</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                        <div id="hidden1">
+                                            <label for="massageBefore">Have you had a massage before?</label>
+                                            <select id="massbefore" name="massageBefore" onchange="showfield1(this.options[this.selectedIndex].value)">
+                                                <option value="" disabled selected>Select Option...</option>
+                                                <option value="Yes">Yes</option>
+                                                <option value="No">No</option>
+                                            </select>
+                                        </div>
+                                        <div id="hidden2">
+                                            <label for="massagetype">Do you prefer a relaxing or firmer massage?</label>
+                                            <select id="massagetype" name="MassageType">
+                                                <option value="" disabled selected>Select Option...</option>
+                                                <option value="relax">Relaxing</option>
+                                                <option value="firm">Firmer</option>
+                                            </select>
+                                            <label for="aromatherapy">Would you like me to use aromatherapy oils</label>
+                                            <select id="arom" name="aromatherapy">
+                                                <option value="" disabled selected>Select Option...</option>
+                                                <option value="yes">Yes</option>
+                                                <option value="no">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="buttonBox">
+                                        <input onclick="prev_step4()" type="button" id="prev_btn3" class="prevBtn" name="prev" value="previous">
+                                        <input type="button" onclick="nex_stepf()" id="nex_btn2" class="nxtBtn" name="next" value="Next">
+                                    </div>
+                            </fieldset>
+                            <fieldset class="box" id="final">
+                                    <div class="formContain">
+                                        <h1>Additional Information</h1>
+                                        <textarea name="hear" id="contact" placeholder="How did you hear about my clinic"></textarea>
+                                    </div>
+                                    <div class="buttonBox">
+                                        <input type="button" onclick="prev_stepf()" name="previous" class="prev_btnf" value="Previous" />
+                                        <input type="submit" name="submitreg" value="Submit" />
+                                    </div>  
+                            </fieldset>
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LOGIN MODAL BOX -->
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"> &times;</button>
+                        <h4>Login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label class="sr-only" for="email">Email</label><input type="text" class="form-control input-sm" placeholder="Email" id="email" name="email">
+                            </div>
+                            <div class="form-group">  
+                                <label class="sr-only" for="password">Password</label>
+                                <input type="password" class="form-control input-sm" placeholder="Password" id="password" name="password">
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                                        
+                            <button type="submit" class="btn btn-info btn-xs">Sign in</button>
+                            <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Cancel</button> 
+                                                
+                        </form>
+                    </div>
+        <!--
+                    <div class="modal-footer">
+                        <div style="padding:10px"></div>
+                    </div>
+        -->
+                </div>
+            </div>
+        </div>
 
     <footer class="info">
         <div id="toTop"><a href="#"><img src="https://iaibloggertips.files.wordpress.com/2014/05/70966-back-to-top-button-for-blogger4.png"></a></div>
@@ -172,6 +317,16 @@
 
 
     <script src="js/style.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
 
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
